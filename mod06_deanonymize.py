@@ -24,7 +24,7 @@ def link_records(anon_df, aux_df):
     aux_counts = (aux_df.groupby(identifiers, dropna=False).size().reset_index(name = "aux_count"))
 
     unique_anon = anon_df.merge(anon_counts[anon_counts["anon_count"] == 1][identifiers], on=identifiers, how="inner")
-    unique_aux = anon_df.merge(aux_counts[aux_counts["aux_count"] == 1][identifiers], on=identifiers, how="inner")
+    unique_aux = aux_df.merge(aux_counts[aux_counts["aux_count"] == 1][identifiers], on=identifiers, how="inner")
 
     matches = unique_anon.merge(unique_aux, on=identifiers, how="inner", validate="one_to_one", suffixes=("_anon", "_aux"))
 
