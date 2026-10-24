@@ -8,10 +8,7 @@ def compute_energy_kwh(jobs_df, power_per_core_kw=POWER_PER_CORE_KW):
     Adds a column 'energy_kwh' to the jobs dataframe.
     """
     df = jobs_df.copy()
-    df["energy_kwh"] = ( 
-        # put energy calculation here
-
-    )
+    df["energy_kwh"] = df["cpu_cores"] * df["runtime_hours"] * power_per_core_kw
     return df
 
 
@@ -61,6 +58,3 @@ def compute_total_runtime(jobs_df, max_cores):
         total_time += batch_time
         remaining_jobs = next_remaining
     return total_time
-
-
-
