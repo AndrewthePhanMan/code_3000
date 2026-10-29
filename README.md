@@ -16,3 +16,8 @@ Your goal is to connect anonymized data back to its source data and check the ma
 
 ### Module 08: Sustainability in Computing
 You will be given a toy dataset and have the opportunity to explore the potential effects of choosing sustainable energy sources to perform computations. You'll code the energy calculation in "sustainability calculations" script, and then you can review the results of various decisions in the "check calculations" notebook. 
+
+# Personal Statement
+I believe that the main issue with CS ethics is that the terms we use are too broad and cram too many different ideas together. Words like fairness, transparency, and responsibility are good, but almost everyone agrees with them without reflecting on what to actually do. As a result, there are many different interpretations of these ideas, resulting in inconsistent implementations.
+
+I think the solution is to be specific with ethics so that they actually help with decision-making. This includes asking what scenarios need to be prevented and the measurable steps made to do so. By doing so, ethical decisions can be consistent and more effective.
